@@ -74,19 +74,19 @@ NAVBAR MENU STYLING
 }
 .content img{
   top: 200px;
-  width: 300%;
-  max-width: 700px;
+  width: 400%;
+  max-width: 900px;
   margin: 20px 0;
   position: relative;
 }
 
-.content2 img{
+/* .content2 img{
   top: 200px;
   width: 100%;
   max-width: 700px;
   margin: 20px 0;
   position: absolute;
-}
+} */
 .content p{
   text-align: justify;
 }
@@ -96,7 +96,7 @@ NAVBAR MENU STYLING
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: red;
+  color: black;
   text-align: center;
   font-size: 14px;
 }
@@ -147,5 +147,8 @@ NAVBAR MENU STYLING
       text-transform: uppercase;
       max-width: 60%;
       height: auto;
+  }
+  .footer p{
+    display: none;
   }
 }
