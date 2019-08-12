@@ -17,9 +17,10 @@ NAVBAR MENU STYLING
   font-family: 'Michroma', sans-serif;
 }
 
-#project{
-  top: 300px;
-  position: relative;
+.section{
+  position: fixed;
+  text-align: center;
+  margin: 50px;
 }
 .header{
   height: 100px;
@@ -41,6 +42,7 @@ NAVBAR MENU STYLING
   text-decoration: none;
   padding: 0 10px;
   transition: 0.4s;
+  font-weight: bold;
 }
 .show-menu-btn,.hide-menu-btn{
   transition: 0.4s;
@@ -59,6 +61,7 @@ NAVBAR MENU STYLING
 .show-menu-btn:hover,
 .hide-menu-btn:hover{
   color: #fff;
+  background-color: red;
 }
 
 #chk{
@@ -80,20 +83,13 @@ NAVBAR MENU STYLING
   position: relative;
 }
 
-/* .content2 img{
-  top: 200px;
-  width: 100%;
-  max-width: 700px;
-  margin: 20px 0;
-  position: absolute;
-} */
 .content p{
   text-align: justify;
 }
 
 .footer {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   color: black;
