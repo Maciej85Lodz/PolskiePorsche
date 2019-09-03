@@ -1,75 +1,85 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Polskie Porsche</title>
-  </head>
-  <body>
-<header class="header">
-    <nav>
-        <div>
+    <head>
+        <!-- Meta Data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- meta tags -->
+        <meta name="description" content="Polskie Porsche">
+        <meta name="keywords" content="#PolskiePorsche, Polskie, Porsche, ABCar, OldTimer">
+        <meta name="author" content="Patryk Mikiciuk">
+        <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+         <!--Our own stylesheet-->
+         <link rel="stylesheet" href="assets/style.css">
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <script src="https://cdn.jsdelivr.net/npm/macy@2.5.0/dist/macy.min.js"></script>
+        <!--Ion Icons-->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+        <title>Polskie Porsche | Patryk Mikiciuk</title>
+    </head>
+    <body>
+        <header>
+          <div>
             <div class="logo">
-                <img src="images/hashtag.png" alt="">                
-            </div>
-            <input type="checkbox" id="chk">
-            <label for="chk" class="show-menu-btn">
-            <i class="fas fa-ellipsis-h"></i>
-            </label>
-            <ul class="menu">
-            <a href="#home">Start</a>
-            <a href="#project">Projekt</a>
-            <a href="#gellery">Galeria</a>
-            <a href="#videos">Video</a>
-            <a href="#contact">Kontakt</a>
-            <label for="chk" class="hide-menu-btn">
-                <i class="fas fa-times"></i>
-            </label>
-            </ul>
+            <img  src="images/hashtag.png" alt="">
+          </div>
+          </div>
+        <button class="hamburger">
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+        <div class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#hero">Start</a></li>
+            <li class="navigation__item"><a href="#about">O Projekcie</a></li>
+            <li class="navigation__item"><a href="">Galeria</a></li>
+            <li class="navigation__item"><a href="">Kontakt</a></li>
+          </ul>
         </div>
-    </nav>
-</header>
-<main id="home">
-    <div class="content">
-        <center>
-            <img src="images/porsche.png" alt="">
-        </center>        
-    </div>    
-  </main>  
-  <section>
-        <div class="section">
-                <div>
-                    <h3>Projekt Polskie Porsche</h3>
-                    <p>
-                        ...Parwda jest Taka...
-                    </p>
-                    <p>
-                        ...że, blacharka jest skończona...
-                    </p>
+        </header>
+        <main>
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="main-message">
+                        <h3>Prawda jest taka...</h3>               
+                        <br>
+                        <img class="main-img" src="images/porsche.png" alt="">
+                        <h1>Projekt Polskie Porsche</h1>
+                        <div class="cta">
+                            <a href="#" class="btn">Czytaj Dalej...</a>
+                        </div>
+                    </div>
                 </div>
+            </section>
+            <br>
+            <section class="about" id="about">
+              <div class="container">
+                <div class="title-heading">
+                  <h3>
+                      Znany dziennikarz i miłośnik klasycznej motoryzacji, Patryk Mikiciuk, planuje przywrócić do życia Porsche 911 z ciekawą historią. Samochód jest w Polsce od kilkudziesięciu lat, ma części od Żuka i jest w naprawdę fatalnym stanie. Nie będzie łatwo.
+                  </h3>
+                </div>
+              </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer"> 
+                <center>
+                    <img src="images/logo.png" alt="">
+                </center>
+                <p>All rights reserved - &copy; <span id="year"></span> Polskie Porsche || powered by <a href="https://maciejwolejszo.pl">maciejwolejszo.pl</a></p>        
             </div>
-  </section>
-  <section>
-
-  </section>
-  <section>
-
-  </section>
-  <footer>
-        <div class="footer"> 
-            <center>
-                <img src="images/logo.png" alt="">
-            </center>
-            <p>All rights reserved - &copy; <span id="year"></span> Polskie Porsche || powered by <a href="https://maciejwolejszo.pl">maciejwolejszo.pl</a></p>        
-        </div>
-  </footer>
-  <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
-  </body>
-</html>
+        </footer>
+        <!-- partial -->
+          <script  src="assets/scripts.js"></script>
+          <script>
+              document.getElementById("year").innerHTML = new Date().getFullYear();
+          </script>
+        </body>
+        </html>
